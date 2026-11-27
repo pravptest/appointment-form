@@ -26,10 +26,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased text-slate-800 bg-slate-50 selection:bg-blue-100 selection:text-blue-900`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased text-slate-800 dark:text-gray-100 bg-slate-50 dark:bg-[#111827] selection:bg-blue-100 dark:selection:bg-blue-900 selection:text-blue-900 dark:selection:text-blue-100`}
       >
-        <Toaster 
-          position="top-right" 
+        <Toaster
+          position="top-right"
           toastOptions={{
             duration: 5000,
             style: {
@@ -54,7 +54,7 @@ export default function RootLayout({
                 secondary: "#ffffff",
               },
             },
-          }} 
+          }}
         />
         {children}
       </body>
